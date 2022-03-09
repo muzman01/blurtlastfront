@@ -1,13 +1,168 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    background-color: #F1F1F1;
+}
+.home{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    overflow: hidden;
+}
+.navborder{
+    border-bottom: 1px solid gray;
+}
+.gizli{
+    width: 50px;
+}
+.accsp{
+    border: 1px solid #ccc;
+    width: 120px;
+    border-radius: 3px;
+    background-color: #f5f5f5;
+    display: block;
+    padding: 9.5px;
+
+    font-size: 13px;
+    line-height: 1.42857143;
+}
+.leftblock{
+    text-align: center;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    box-shadow: inset 0 1px 3px rgb(0 0 0 / 5%), 0 1px 0 rgb(255 255 255 / 10%);
+    border-color: gainsboro;
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #faf9f9;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 5%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 5%);
+    width: 400px;
+    height: 450px;
+    
 }
 
+
+.op {
+    color: #888;
+    padding: 4px 4px 4px 57px;
+    margin-bottom: 5px;
+    background: #FFF;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 5%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 5%);
+    font-weight: 300;
+    font-size: 17px;
+    z-index: 10;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    line-height: 1.429;
+
+}
+.op-mini {
+    padding-left: 30px;
+    line-height: 1.1;
+    background: #FDFDFD;
+}
+.op span.account {
+    color: #444;
+    font-weight: 400;
+}
+span.account {
+    opacity: 0.8;
+    color: #000;
+}
+.op code {
+    font-size: 70%;
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+}
+
+.op-lead .action {
+    display: block;
+    padding: 3px 0;
+}
+.op-mini .action {
+    font-size: 82.4%;
+    display: inline;
+}
+.op span.account {
+    color: #444;
+    font-weight: 400;
+}
+span.account {
+    opacity: 0.8;
+    color: #000;
+}
+.op .tag {
+    font-size: 11px;
+    float: right;
+    margin: -1px 0 0 8px;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    color: #BBB;
+}
+.op .tag-virt {
+    font-style: italic;
+    margin-right: 4px;
+    color: #DDD;
+}
+
+.op a {
+   
+    border: none;
+}
+ 
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+}
+
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.op-lead > .foot {
+    display: block;
+    padding: 0 4px;
+}
+.op .foot {
+    font-size: 70%;
+    vertical-align: middle;
+    color: #AAA;
+    line-height: 1.2;
+    display: inline-block;
+}
+@media screen and (max-width:500px) {
+    .home {
+        width: 100%;
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
 }
